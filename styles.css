@@ -1,0 +1,51 @@
+body {
+    background-color: #FFFAEF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFFAEF;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #79622B;
+    padding: 10px;
+    text-align: center;
+    color: #FFFAEF;
+    font-family: "Open Sans Hebrew", sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFAEF;
+    padding: 10px;
+    background-color: #79622B;
+    
+}
+
+nav a:hover {
+    background-color: #C2B187;
+}
+
+h1 {
+    font-family: "American Typewriter";
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "American Typewriter";
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+p {
+    font-family: "Open Sans Hebrew", sans-serif;
+    font-size: 10px;
+}
