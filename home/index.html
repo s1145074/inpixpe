@@ -1,41 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>DE CODE DE.CODE.R</title>
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <link rel="stylesheet" href="styles.css">
-    
-    <nav>
-        <a class="active" href="index.html">hoofdpagina</a>
-        <a href="timeline.html">about</a>
-        <a href="#contact">contact</a>
-    </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Timeline</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
 
-    <header>
-        <h1>De Code De.Code.r</h1>
-    </header>
-    
-  </head>
+    .timeline {
+      max-width: 800px;
+      margin: 20px auto;
+    }
 
+    .timeline-item {
+      position: relative;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .timeline-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    .timeline-item-content {
+      display: none;
+      padding-top: 10px;
+    }
+
+    .timeline-item:hover .timeline-item-content {
+      display: block;
+    }
+  </style>
+</head>
 <body>
 
-
+<div class="timeline">
+  <a href="https://example.com">
+    <div class="timeline-item">
+      <div class="timeline-item-content">
+        <h3>First Semester Begins</h3>
+        <p>Start of the academic year with various introductory events and classes.</p>
+      </div>
+    </div>
+  </a>
   
-    <section>
-        <h2>Welcome to Your Website!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in purus auctor suscipit nec eleifend odio. Etiam venenatis finibus nisi at auctor. Integer non nunc justo. Curabitur sit amet enim sit amet orci ultricies feugiat et in sem. Aliquam a consectetur nibh. Praesent vel sem at ante condimentum dictum. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in purus auctor suscipit nec eleifend odio. Etiam venenatis finibus nisi at auctor. Integer non nunc justo. Curabitur sit amet enim sit amet orci ultricies feugiat et in sem. Aliquam a consectetur nibh. Praesent vel sem at ante condimentum dictum. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in purus auctor suscipit nec eleifend odio. Etiam venenatis finibus nisi at auctor. Integer non nunc justo. Curabitur sit amet enim sit amet orci ultricies feugiat et in sem. Aliquam a consectetur nibh. Praesent vel sem at ante condimentum dictum. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in purus auctor suscipit nec eleifend odio. Etiam venenatis finibus nisi at auctor. Integer non nunc justo. Curabitur sit amet enim sit amet orci ultricies feugiat et in sem. Aliquam a consectetur nibh. Praesent vel sem at ante condimentum dictum. </p>
-      
+  <a href="https://example2.com">
+    <div class="timeline-item">
+      <div class="timeline-item-content">
+        <h3>Winter Break</h3>
+        <p>School closed for winter break. Enjoy your holidays!</p>
+      </div>
+    </div>
+  </a>
 
-    </section>
+  <a href="https://example3.com">
+    <div class="timeline-item">
+      <div class="timeline-item-content">
+        <h3>Spring Break</h3>
+        <p>Take a break and recharge during the spring break.</p>
+      </div>
+    </div>
+  </a>
 
-    <footer style="font-size:x-small">
-      <p>Gemaakt door Lennard Harteveld <a href="mailto:s1145074@student.hsleiden.nl" style="color: #79622B">s1145074@student.hsleiden.nl</a></p>
-    </footer>
+  <!-- Add more timeline items as needed -->
+
+</div>
 
 </body>
-
 </html>
