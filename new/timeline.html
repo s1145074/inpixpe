@@ -4,37 +4,52 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Murder Mystery</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="img/logo_1.ico">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 
 
-    
+    <nav class="navbar">
+        <ul>
+          <li class="dropdown">
+            <a href="index.html"><img src="img/logo_4.pdf" alt="menu"></a>
+            <ul class="dropdown-content">
+              <li><a href="timeline.html">Tijdlijn</a></li>
+              <li><a href="timeline.html">Tijdlijn</a></li>
+              <li><a href="timeline.html">Tijdlijn</a></li>
+              <li><a href="timeline.html">Tijdlijn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
 
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction()">
-            Menu
-        </button>
-
-        <div class="dropdown-content" id="myDropdown">
-            <a href="timeline.html">TIJDLIJN</a>
-        </div>
-
-        </div> 
-    </div>
-
-    
 
     <main>
-        <article>
-            <h1>Timeline</h1>
-        </article>
+        <h1>Tijdlijn</h1>
+
+
+        <section class="event" onclick="toggleInfo(this)">
+          <time datetime="2023-12-30">30 december 2023</time>
+          <h2>Planning</h2>
+          <p class="more-info">Meer informatie over gebeurtenis 1.</p>
+        </section>
+      
+        <section class="event" onclick="toggleInfo(this)">
+          <time datetime="2023-12-30">30 december 2023</time>
+          <h2>Planning</h2>
+          <p class="more-info">Meer informatie over gebeurtenis 1.</p>
+        </section>
+  
+
     </main>
+
+    <footer>
+        <p style="font-family: 'Courier Prime';"> Pixel Perfect - <a href="mailto:s1145074@student.hsleiden.nl" style="color: black;">Lennard Harteveld</a></p>
+      </footer>
 
 </body>
 </html>

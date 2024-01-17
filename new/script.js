@@ -1,12 +1,12 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
+function toggleInfo(clickedEvent) {
+  var events = document.querySelectorAll('.event');
+  
+  events.forEach(function(event) {
+    var info = event.querySelector('.more-info');
+    if (event === clickedEvent) {
+      info.style.display = info.style.display === 'none' ? 'block' : 'none';
+    } else {
+      info.style.display = 'none';
     }
-  }
+  });
 }

@@ -1,102 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 html {
-    background-color: #FFFAEF;
+  background-color: #FFFAEF;
 }
 
 h1 {
-    font-family: 'Courier Prime';
-    font-size: 40px;
+  font-family: 'Courier Prime';
+  font-size: 40px;
 }
 
 h2 {
-    font-family: 'Courier Prime';
-    font-size: 22px;
+  font-family: 'Courier Prime';
+  font-size: 22px;
 }
 
 p {
-    font-family: 'Open Sans Hebrew', sans-serif;
-    font-size: 16px;
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-size: 16px;
 }
 
 a {
-    font-family: 'Courier Prime';
-    color: #79622B;
+  font-family: 'Courier Prime';
+  color: #79622B;
 }
 
 main {
-    text-align: left;
-    margin-left: 25%;
-    margin-right: 25%;
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-
-
-
-@media only screen and (max-width: 600px) {
-    main {
-        text-align: left;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+time {
+  font-family: 'Courier Prime';
 }
 
+footer {
+  text-align: center;
+}
 
 .navbar {
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .navbar a {
-    float: center;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: center;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    background-color: #DBB559;
-    padding: 2px 100px;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: center;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-  }
-  
+  background-color: #79622B;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: center;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1% 1%;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #C2B187;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #DBB559;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #C2B187;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.event {
+  position: relative;
+  margin-bottom: 5%;
+  padding: 2%;
+  background-color: #DBB559;
+  width: 90%;
+  cursor: pointer;
+  margin-left: 5%;
+  transition: transform 0.2s;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event time {
+  color: #FFFFFF;
+
+}
+
+.more-info {
+  display: none;
+  margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
   .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    font-size: 24px;
   }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
+
+  h1 {
+    font-size: 26px;
   }
-  
-  .show {
-    display: block;
+  h2 {
+    font-size: 20px;
   }
+  main {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
