@@ -139,5 +139,12 @@ footer {
     margin-left: 5%;
     width: 90%;
   }
+
+  .navbar {
+    margin-top: -2.1%;
+    margin-left: -2.1%;
+    margin-right: -2.1%;
+    background-color: #79622B;
+  }
 }
 
