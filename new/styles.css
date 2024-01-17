@@ -39,11 +39,13 @@ footer {
 }
 
 .navbar {
+  margin-top: -1%;
+  margin-left: -1%;
+  margin-right: -1%;
   background-color: #79622B;
 }
 
 .navbar ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
