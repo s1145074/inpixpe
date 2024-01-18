@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+html::before {
+  content: "";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: #79622B;
+  z-index: -1;
+}
+
 html {
   background-color: #FFFAEF;
 }
@@ -26,8 +37,13 @@ a {
 
 main {
   text-align: left;
-  margin-left: 25%;
-  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 50px auto;
+  position: relative;
+  
 }
 
 time {
@@ -94,30 +110,44 @@ footer {
 
 .event {
   position: relative;
-  margin-bottom: 5%;
-  padding: 2%;
+  margin-bottom: 20px; /* Increased space between events */
+  padding: 5px 10px;
+  width: 50%;
   background-color: #DBB559;
-  width: 90%;
+  transition: transform 0.3s;
   cursor: pointer;
-  margin-left: 5%;
-  transition: transform 0.2s;
+  z-index: 2;
 }
 
 .event:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.event time {
-  color: #FFFFFF;
-
+.event:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
 }
 
-.more-info {
+.event .info {
   display: none;
-  margin-top: 2%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60%;
+  background-color: #C2B187;
+  color: #FFFFFF;
+  padding: 10px;
+  z-index: 3;
 }
 
+.event:nth-child(even) .info {
+  left: auto;
+  right: 0;
+}
 
+.event:hover .info {
+  display: block;
+}
 
 
 
@@ -141,6 +171,13 @@ footer {
     width: 90%;
   }
 
+  .timeline h1 {
+    font-size: 20px;
+  }
+
+  .timeline p {
+    font-size: 10px;
+  }
 
   .navbar {
     margin-top: -2.1%;

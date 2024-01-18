@@ -3,75 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Vertical Timeline with Middle Line</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
+      font-family: 'Arial', sans-serif;
     }
 
-    .message-container {
+    main {
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    .message {
+      align-items: flex-start;
+      max-width: 600px;
+      margin: 50px auto;
       position: relative;
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      cursor: pointer;
     }
 
-    .popup {
+    .event {
+      position: relative;
+      margin-bottom: 10px; /* Increased space between events */
+      padding: 20px;
+      width: 50%;
+      background-color: #f0f0f0;
+      transition: transform 0.3s;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .event:hover {
+      transform: scale(1.05);
+    }
+
+    .event:nth-child(even) {
+      align-self: flex-end;
+      text-align: right; /* Align even events to the right */
+    }
+
+    .event .info {
       display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 60%;
       background-color: #fff;
       padding: 10px;
-      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+    }
+
+    .event:nth-child(even) .info {
+      left: auto;
+      right: 0; /* Align popup on even numbers to the right */
+    }
+
+    .event:hover .info {
+      display: block;
+    }
+
+    .middle-line {
+      position: absolute;
+      top: 0;
+      left: 41.5%;
+      width: 100px;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
     }
   </style>
-  <title>Message Selector</title>
 </head>
 <body>
 
-<div class="message-container">
-  <div class="message" onclick="togglePopup(this)">
-    <p>Your first message content goes here.</p>
-    <div class="popup">
-      <p>Popup content goes here.</p>
+  <main>
+    
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
     </div>
-  </div>
-
-  <div class="message" onclick="togglePopup(this)">
-    <p>Your second message content goes here.</p>
-    <div class="popup">
-      <p>Popup content goes here.</p>
+    
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
     </div>
-  </div>
 
-  <div class="message" onclick="togglePopup(this)">
-    <p>Your third message content goes here.</p>
-    <div class="popup">
-      <p>Popup content goes here.</p>
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
     </div>
-  </div>
-</div>
 
-<script>
-  function togglePopup(message) {
-    const popup = message.querySelector('.popup');
-    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
-  }
-</script>
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    <div class="event">
+      <h2>Event 1</h2>
+      <div class="info">
+        <p>Description of Event 1.</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    <div class="middle-line"></div>
+  
+  </main>
 
 </body>
 </html>
