@@ -103,7 +103,7 @@ footer {
 
 .event {
   position: relative;
-  margin-bottom: 20px; /* Increased space between events */
+  margin-bottom: 20px;
   padding: 5px 10px;
   width: 50%;
   background-color: #DBB559;
