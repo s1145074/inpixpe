@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 
+
 html {
   background-color: #FFFAEF;
 }
@@ -96,6 +97,11 @@ footer {
 }
 
 
+.pdf_view {
+  margin-left: 30%;
+}
+
+
 .event p {
   font-family: 'Courier Prime';
   color: #FFFAEF;
@@ -148,6 +154,8 @@ footer {
 
 
 
+
+
 @media screen and (max-width: 500px){
   .dropdown-content a {
     font-size: 24px;
@@ -164,6 +172,14 @@ footer {
     width: 90%;
   }
 
+  .pdf_view {
+    margin-left: 10%;
+  }
+
+  .pdf_view object {
+    width: 90%;
+    height: 450px;
+  }
  
 
   .event h1 {
